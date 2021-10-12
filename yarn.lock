@@ -11506,6 +11506,16 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-federo@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-federo/-/typeface-federo-1.1.13.tgz#9930501303206e215aac9644a27f1fc44a0e97a9"
+  integrity sha512-NDTM9n/rl+wifQh1Cd6qHBIzdT4CkU02SfdE8lKAwNXjpCXB6GjHSqi5YdBDf0L1mNNn3+da4zWnvTrM8IMXZg==
+
+typeface-swanky-and-moo-moo@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-swanky-and-moo-moo/-/typeface-swanky-and-moo-moo-1.1.13.tgz#a116b8c2e2bef42fccf34821ecb8c833e2746f67"
+  integrity sha512-jPR228xua1i+xHBMmLd3KDj6bLTBliho796hZCRVGj66dgUAF5aHYBVoK52kMtxWac71TqHYJWGEwyO14FU1Pg==
+
 unbox-primitive@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.1.tgz#085e215625ec3162574dc8859abee78a59b14471"

@@ -1,34 +1,27 @@
 import React, { Component } from 'react';
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Container,
-  Row,
-  Col,
-  Jumbotron,
-  Button
+  Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Container, Row, Col, Jumbotron,
 } from 'reactstrap';
+import Directory from './components/DirectoryComponent'
+import { RESTAURANTS } from './shared/restaurants';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
+      this.toggle = this.toggle.bind(this);
+      this.state = {
+        isOpen: false,
+        restaurants: RESTAURANTS,
+      };
   }
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
+
   render() {
     return (
       <div className="App">
@@ -54,20 +47,22 @@ class App extends Component {
         <Jumbotron>
           <Container>
             <Row>
-              <Col>
+              <Col align="center">
                 <h1>Northwest Restaurant Consultant</h1>
-                <p>
-                  <Button
-                    tag="a"
-                    color="success"
-                    size="large"
-                    href="index.html"
-                    target="_blank">Homepage</Button>
-                </p>
+                <span>
+                  | Restaurant Development | 
+                </span>
+                <span>
+                  | Consulting |
+                </span>
+                <span>
+                  | Mentorship |
+                </span>
               </Col>
             </Row>
           </Container>
         </Jumbotron>
+        <Directory restaurants={this.state.restaurants} />
       </div>
     );
   }
