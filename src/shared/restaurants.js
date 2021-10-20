@@ -1,6 +1,7 @@
 export const RESTAURANTS = [
     {
         id: 1,
+        featured: true,
         name: 'de Fuego',
         image: 'assets/images/deguegoSz.jpg',
         alt: 'assets/images/defuegopool.jpg',
@@ -14,6 +15,7 @@ export const RESTAURANTS = [
     },
     {
         id: 2,
+        featured: false,
         name: "Hayden's Lakefront Grill",
         image: 'assets/images/Haydenslittle.jpg',
         alt: 'assets/images/HaydenslakeSz.jpg',
@@ -27,6 +29,7 @@ export const RESTAURANTS = [
     },
     {
         id: 3,
+        featured: false,
         name: "Stone Cliff Inn",
         image: '/assets/images/stonecliffSz.jpg',
         alt: 'assets/images/stonecliffback.jpg',
@@ -40,6 +43,7 @@ export const RESTAURANTS = [
     },
     {
         id: 4,
+        featured: false,
         name: "Shigezo",
         image: 'assets/images/shigezoSz.jpg',
         alt: 'assets/images/shigezocarousel.png',
@@ -53,6 +57,7 @@ export const RESTAURANTS = [
     },
     {
         id: 5,
+        featured: false,
         name: "Southpark Seafood Grill",
         image: 'assets/images/southparkSz.jpeg',
         alt: 'assets/images/southparkmedium.jpeg',

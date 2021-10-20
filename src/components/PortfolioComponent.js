@@ -3,7 +3,7 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 
-function RenderPortfolioItem({ restaurant, onClick }) {
+function RenderPortfolioItem({ restaurant}) {
     return (
         <Card>
             <Link to={`/portfolio/${restaurant.id}`}>
