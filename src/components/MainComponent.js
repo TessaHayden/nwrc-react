@@ -4,6 +4,9 @@ import Portfolio from './PortfolioComponent';
 import RestaurantInfo from './RestaurantInfoComponent';
 import { RESTAURANTS } from '../shared/restaurants';
 import Header from './HeaderComponent';
+import Footer from './FooterComponent';
+import Home from './HomeComponent';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
     constructor(props) {
@@ -14,13 +17,22 @@ class Main extends Component {
     }
 
     render() {
+        const HomePage = () => {
+            return (
+                <Home />
+            );
+        };
         return (
             <div>
                 <Header />
-                <Portfolio />
-                
+                <Switch>
+                    <Route path='/home' component={HomePage} />
+                    <Route exact path='/portfolio' render={() => <Portfolio restaurants={this.state.restaurants} />} />
+                    <Redirect to='/home' />
+                    </Switch>
+                <Footer />
             </div>
-        )
+        );
     }
 }
 
