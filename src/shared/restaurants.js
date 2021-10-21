@@ -3,7 +3,7 @@ export const RESTAURANTS = [
         id: 1,
         featured: true,
         name: 'de Fuego',
-        image: 'assets/images/deguegoSz.jpg',
+        image: 'assets/images/defuegocarousel.jpg',
         alt: 'assets/images/defuegopool.jpg',
         address: {
             street: '12566 SE 93rd Ave',

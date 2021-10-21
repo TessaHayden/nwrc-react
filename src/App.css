@@ -9,3 +9,18 @@ body {
     color: #FCFAFA;
     background-color: rgba(22, 42, 60, 0.321);
 }
+ h1 {
+    font: 1.75rem;
+}
+h2 {
+    font: 1rem;
+    color: crimson;
+}
+.navbar {
+    background-color: rgba(250, 250, 250, 0.5);
+}
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
