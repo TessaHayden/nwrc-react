@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+
 function RenderRestaurant({ restaurant }) {
     return (
         <div className="col-md-5 m-1">
@@ -14,8 +15,9 @@ function RenderRestaurant({ restaurant }) {
         </div>
     );
 }
+
 function RestaurantInfo(props) {
-    const restaurant = props.restaurant;
+    // const restaurant = props.restaurant;
     if (props.restaurant) {
         return (
             <div className="container">

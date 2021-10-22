@@ -7,6 +7,7 @@ import 'bootstrap-social/bootstrap-social.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-swanky-and-moo-moo';
 import 'typeface-federo';
+import 'typeface-raleway';
 import App from './App';
 
 

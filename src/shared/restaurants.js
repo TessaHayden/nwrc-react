@@ -3,8 +3,11 @@ export const RESTAURANTS = [
         id: 1,
         featured: true,
         name: 'de Fuego',
-        image: 'assets/images/defuegocarousel.jpg',
+        image: 'assets/images/deguegoSz.jpg',
         alt: 'assets/images/defuegopool.jpg',
+        menu: {
+            lunch: 'assets/images/defuegolunch.png'
+        },
         address: {
             street: '12566 SE 93rd Ave',
             city: 'Clackamas',

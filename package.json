@@ -18,7 +18,11 @@
     "react-scripts": "4.0.3",
     "reactstrap": "8.5.1",
     "redux": "4.0.5",
+    "typeface-belleza": "^1.1.13",
     "typeface-federo": "^1.1.13",
+    "typeface-lexend-tera": "^1.1.13",
+    "typeface-raleway": "^1.1.13",
+    "typeface-roboto": "^1.1.13",
     "typeface-swanky-and-moo-moo": "^1.1.13",
     "web-vitals": "^1.0.1"
   },

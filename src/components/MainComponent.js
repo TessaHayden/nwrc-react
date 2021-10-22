@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Portfolio from './PortfolioComponent';
-import RestaurantInfo from './RestaurantInfoComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
+import Portfolio from './PortfolioComponent';
+import RestaurantInfo from './RestaurantInfoComponent';
 import Contact from './ContactComponent';
 import { RESTAURANTS } from '../shared/restaurants';
 
@@ -15,6 +15,7 @@ class Main extends Component {
         super(props);
         this.state = {
             restaurants: RESTAURANTS,
+            userInput: '',
         };
     }
 
@@ -31,7 +32,12 @@ class Main extends Component {
                 />
             );
         };
-
+        const ContactUs = () => {
+            return (
+                <Contact />
+            )
+        }
+       
         return (
             <div>
                 <Header />

@@ -11676,10 +11676,30 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-belleza@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-belleza/-/typeface-belleza-1.1.13.tgz#99f0dea882c2b43c624c805ad86774e9d76b4d77"
+  integrity sha512-miZR0E6q9OThddGonogd66LCXobyp3cEVA24bTSA13eONTtoqE7m49eOnIjrWc46gE7YOA1KFrLGb6cV82441Q==
+
 typeface-federo@^1.1.13:
   version "1.1.13"
   resolved "https://registry.yarnpkg.com/typeface-federo/-/typeface-federo-1.1.13.tgz#9930501303206e215aac9644a27f1fc44a0e97a9"
   integrity sha512-NDTM9n/rl+wifQh1Cd6qHBIzdT4CkU02SfdE8lKAwNXjpCXB6GjHSqi5YdBDf0L1mNNn3+da4zWnvTrM8IMXZg==
+
+typeface-lexend-tera@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-lexend-tera/-/typeface-lexend-tera-1.1.13.tgz#11e2a92a270eaca756a606bc09a7f2e72c84128e"
+  integrity sha512-2ywh9p0QPcOVbcs+/4VCMgSglxOaFmOatKrhYaxeEQP8G+ni2dNKeqlARCkyKXSh2EF+KQb51LxB4qTNSA8xTA==
+
+typeface-raleway@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-raleway/-/typeface-raleway-1.1.13.tgz#5dd44c7029c69991f3e8a66f4434ba62bcf0886a"
+  integrity sha512-iouV4D1dv4Ylm++j2PmPW7HKJH7zTKu5xXsta1hqQ2oG8+9fSpocuF40xCSTckaa1DLYbk1TUiU14wr2nCUBqg==
+
+typeface-roboto@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-1.1.13.tgz#9c4517cb91e311706c74823e857b4bac9a764ae5"
+  integrity sha512-YXvbd3a1QTREoD+FJoEkl0VQNJoEjewR2H11IjVv4bp6ahuIcw0yyw/3udC4vJkHw3T3cUh85FTg8eWef3pSaw==
 
 typeface-swanky-and-moo-moo@^1.1.13:
   version "1.1.13"

@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row } from 'reactstrap';
+import { Control, LocalForm, Errors } from 'react-redux-form';
 
-function Contact(props) {
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <h2>Contact a consultant</h2>
-                    <hr />
-                </div>
-            </div>
-            <div className="row row-content align-items-center">
-                <div className="col-sm-4">
-                    <a role="button" className="btn btn-link" href="tel:+15033497151"><i className="fa fa-phone">Phone</i></a>
-                    <a role="button" className="btn btn-link" href="mailto:nwrestaurantconsultants@hotmail.com"><i className="fa fa-envelope-o">Email</i></a>
-                </div>
-            </div>
-        </div>
-    );
+class Contact extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            userInput: ''
+        }
+        this.handleChange = this.handleChange.bind(this);
+    }
+    handleChange(event) {
+        this.setState({ userInput: event.target.value });
+    }
+    render() {
+        return (
+        
+                <form>
+                    <input type="text" value={this.state.userInput} onChange={this.handleChange}/>
+                </form>
+           
+        )
+    }
 }
 
 export default Contact;
