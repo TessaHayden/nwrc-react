@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
@@ -7,15 +8,22 @@ import Portfolio from './PortfolioComponent';
 import RestaurantInfo from './RestaurantInfoComponent';
 import Contact from './ContactComponent';
 import { RESTAURANTS } from '../shared/restaurants';
+import { MENUS } from '../shared/menus';
 
 
+const mapStateToProps = state => {
+    return {
+        restaurants: state.restaurants,
+        menus: state.menus,
+    }
+}
 
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
             restaurants: RESTAURANTS,
-            userInput: '',
+            menus: MENUS,
         };
     }
 
@@ -29,14 +37,10 @@ class Main extends Component {
             return (
                 <RestaurantInfo
                     restaurant={this.state.restaurants.filter(restaurant => restaurant.id === +match.params.restaurantId)[0]}
+                    menus ={this.state.menus.filter(menu => menu.menuId === +match.params.menuId)}
                 />
             );
         };
-        const ContactUs = () => {
-            return (
-                <Contact />
-            )
-        }
        
         return (
             <div>
@@ -54,4 +58,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default withRouter(connect(mapStateToProps)(Main));

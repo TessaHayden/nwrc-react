@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 function RenderRestaurant({ restaurant }) {
     return (
         <div className="col-md-5 m-1">
+            <h4>{restaurant.name}</h4>
             <Card>
                 <CardImg top src={restaurant.image} alt={restaurant.name} />
                 <CardBody>
@@ -15,14 +16,36 @@ function RenderRestaurant({ restaurant }) {
         </div>
     );
 }
-
+function RenderMenus({ menus }) {
+    if (menus) {
+        return (
+            <div class="col-md-5 m-1">
+                <h4>Menus</h4>
+                <Card>
+                    <CardImg top src="/assets/images/defuegolunch.png" alt={menus.name} />
+                    <CardBody>
+                        <CardText>Hello</CardText>
+                    </CardBody>
+                </Card>
+                {menus.map((menu) => {
+                    return (
+                        <div key={menu.id}>
+                            <p>{menu.name}</p>
+                        </div>
+                    );
+                })}
+            </div>
+        );
+    }
+}
 function RestaurantInfo(props) {
-    // const restaurant = props.restaurant;
+    const restaurant = props.restaurant;
     if (props.restaurant) {
         return (
             <div className="container">
                 <div className="row">
                     <RenderRestaurant restaurant={props.restaurant} />
+                    <RenderMenus menus ={props.menus} />
                 </div>
             </div>
         );
@@ -41,6 +64,7 @@ function RestaurantInfo(props) {
             </div>
             <div className="row">
                 <RenderRestaurant restaurant={props.restaurant} />
+                <RenderMenus menus={props.menus} />
             </div>
         </div>
     );
