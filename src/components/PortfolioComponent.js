@@ -3,7 +3,7 @@ import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } 
 import { Link } from 'react-router-dom';
 
 
-function RenderPortfolioItem({ restaurant}) {
+function RenderPortfolioItem({restaurant}) {
     return (
         <Card>
             <Link to={`/portfolio/${restaurant.id}`}>
@@ -29,7 +29,7 @@ function Portfolio(props) {
                 <div className="col">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem><Link to="/portfolio">Portfolio</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>Portfolio</BreadcrumbItem>
                     </Breadcrumb>
                     <h2>Portfolio</h2>
                     <hr />

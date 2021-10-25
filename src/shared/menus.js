@@ -3,16 +3,7 @@ export const MENUS = [
         id: 1,
         menuId: 1,
         name: 'de Fuego',
-        lunch: {
-            lunch1: 'assets/images/defuegolunch.png',
-            lunch2: 'assets/images/deguegoSz.jpg',
-            lunch3: 'assets/images/defuegopool.jpg',
-        },
-        dinner: {
-            dinner1: 'assets/images/#.jpg',
-            dinner2: 'assets/images/#.jpg',
-            dinner3: 'assets/images/#.jpg'
-        },
+        example: '../assets/images/defuegolunch.png',
         description: 'Southwestern inspired tapas restaurant.'
     },
     {
@@ -21,16 +12,7 @@ export const MENUS = [
         name: "Hayden's Lakefront Grill",
         image: 'assets/images/Haydenslittle.jpg',
         alt: 'assets/images/HaydenslakeSz.jpg',
-        lunch: {
-            lunch1: 'assets/images/defuegolunch.png',
-            lunch2: 'assets/images/deguegoSz.jpg',
-            lunch3: 'assets/images/defuegopool.jpg',
-        },
-        dinner: {
-            dinner1: 'assets/images/#.jpg',
-            dinner2: 'assets/images/#.jpg',
-            dinner3: 'assets/images/#.jpg'
-        },
+        example: 'assets/images/www.haydensgrill.com_menu_.png',
         description: 'Family friendly, casual fine dining on a lake!'
     },
     {
@@ -39,17 +21,8 @@ export const MENUS = [
         name: "Stone Cliff Inn",
         image: '/assets/images/stonecliffSz.jpg',
         alt: 'assets/images/stonecliffback.jpg',
-        lunch: {
-            lunch1: 'assets/images/defuegolunch.png',
-            lunch2: 'assets/images/deguegoSz.jpg',
-            lunch3: 'assets/images/defuegopool.jpg',
-        },
-        dinner: {
-            dinner1: 'assets/images/#.jpg',
-            dinner2: 'assets/images/#.jpg',
-            dinner3: 'assets/images/#.jpg'
-        },
-        description: 'A rustic inn right off the Clackamas River.'
+        example: 'assets/images/stonecliffmenu.png',
+        description: 'A rustic inn off the Clackamas River.'
     },
     {
         id: 4,
@@ -57,16 +30,7 @@ export const MENUS = [
         name: "Shigezo",
         image: 'assets/images/shigezoSz.jpg',
         alt: 'assets/images/shigezocarousel.png',
-        lunch: {
-            lunch1: 'assets/images/defuegolunch.png',
-            lunch2: 'assets/images/deguegoSz.jpg',
-            lunch3: 'assets/images/defuegopool.jpg',
-        },
-        dinner: {
-            dinner1: 'assets/images/#.jpg',
-            dinner2: 'assets/images/#.jpg',
-            dinner3: 'assets/images/#.jpg'
-        },
+        example: 'assets/images/shigezosushibar.jpg',
         description: 'Japanese sushi & izakaya bar.',
     },
     {
@@ -75,16 +39,7 @@ export const MENUS = [
         name: "Southpark Seafood Grill",
         image: 'assets/images/southparkSz.jpeg',
         alt: 'assets/images/southparkmedium.jpeg',
-        lunch: {
-            lunch1: 'assets/images/defuegolunch.png',
-            lunch2: 'assets/images/deguegoSz.jpg',
-            lunch3: 'assets/images/defuegopool.jpg',
-        },
-        dinner: {
-            dinner1: 'assets/images/#.jpg',
-            dinner2: 'assets/images/#.jpg',
-            dinner3: 'assets/images/#.jpg'
-        },
+        example: 'assets/images/southparkmedium.jpeg',
         description: 'High quality seafood in Downtown Portland, near major shopping centers and businesses'
     }
 ];

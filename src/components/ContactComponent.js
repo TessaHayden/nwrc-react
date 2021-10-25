@@ -18,8 +18,6 @@ class Contact extends Component {
             lastName: '',
             phoneNum: '',
             email: '',
-            agree: false,
-            contactType: 'By Phone',
             feedback: '',
             touched: {
                 firstName: false,
@@ -37,14 +35,13 @@ class Contact extends Component {
         alert('Current state is: ' + JSON.stringify(values));
     }
     render() {
-
         return (
             <div className="container">
                 <div className="row">
                     <div className="col">
                         <Breadcrumb>
                             <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                            <BreadcrumbItem active>Contact Us</BreadcrumbItem>
+                            <BreadcrumbItem active><Link to="/contactus">Contact Us</Link></BreadcrumbItem>
                         </Breadcrumb>
                         <h2>Contact Us</h2>
                         <hr />
@@ -53,13 +50,13 @@ class Contact extends Component {
 
                 <div className="row row-content align-items-center">
                     <div className="col">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> campsites@nucamp.co</a>
+                        <a role="button" className="btn btn-link" href="tel:+15033497151"><i className="fa fa-phone" /> Call Us</a><br />
+                        <a role="button" className="btn btn-link" href="mailto:nwrestaurantconsultants@hotmail.com"><i className="fa fa-envelope-o" /> Email Us</a>
                     </div>
                 </div>
                 <div className="row row-content">
                     <div className="col-12">
-                        <h2>Send us your Feedback</h2>
+                        <h2>Contact a consultant</h2>
                         <hr />
                     </div>
                     <div className="col-md-10">
@@ -160,27 +157,6 @@ class Contact extends Component {
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Col md={{ size: 4, offset: 2 }}>
-                                    <div className="form-check">
-                                        <Label check>
-                                            <Control.checkbox
-                                                model=".agree"
-                                                name="agree"
-                                                className="form-check-input"
-                                            /> {''}
-                                            <strong>May we contact you?</strong>
-                                        </Label>
-                                    </div>
-                                </Col>
-                                <Col md={4}>
-                                    <Control.select model=".contactType" name="contactType"
-                                        className="form-control">
-                                        <option>By Phone</option>
-                                        <option>By Email</option>
-                                    </Control.select>
-                                </Col>
-                            </Row>
-                            <Row className="form-group">
                                 <Label htmlFor="feedback" md={2}>Your Feedback</Label>
                                 <Col md={10}>
                                     <Control.textarea model=".feedback" id="feedback" name="feedback"
@@ -202,5 +178,6 @@ class Contact extends Component {
         );
     }
 }
+
 
 export default Contact;

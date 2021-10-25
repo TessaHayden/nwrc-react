@@ -22,34 +22,34 @@ function RenderMenus({ menus }) {
             <div class="col-md-5 m-1">
                 <h4>Menus</h4>
                 <Card>
-                    <CardImg top src="/assets/images/defuegolunch.png" alt={menus.name} />
-                    <CardBody>
-                        <CardText>Hello</CardText>
-                    </CardBody>
+                    <CardImg top src={menus.example} alt={menus.name} />
                 </Card>
+                <p>WTF Mate?</p>
                 {menus.map((menu) => {
                     return (
                         <div key={menu.id}>
-                            <p>{menu.name}</p>
+                            <p>hello</p>
                         </div>
                     );
                 })}
             </div>
         );
     }
+    return <div />;
 }
 function RestaurantInfo(props) {
-    const restaurant = props.restaurant;
     if (props.restaurant) {
         return (
             <div className="container">
                 <div className="row">
                     <RenderRestaurant restaurant={props.restaurant} />
-                    <RenderMenus menus ={props.menus} />
+                    <RenderMenus menus={props.menus} />
                 </div>
             </div>
         );
     }
+
+
     return (
         <div className="container">
             <div className="row">

@@ -33,7 +33,7 @@ class Main extends Component {
                 <Home restaurant={this.state.restaurants.filter(restaurant => restaurant.featured)[0]} />
             );
         };
-        const RestaurantWithId = ({ match }) => {
+        const RestaurantWithId = ({match}) => {
             return (
                 <RestaurantInfo
                     restaurant={this.state.restaurants.filter(restaurant => restaurant.id === +match.params.restaurantId)[0]}
