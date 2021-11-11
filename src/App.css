@@ -3,10 +3,10 @@ body {
 }
 .card-title {
     text-align: center;
-    font: 500 1.95rem "Swanky and Moo Moo", sans-serif;
+    font: 500 1.95rem "Cedarville Cursive", sans-serif;
 }
 .card-subtitle {
-    font: 400 1.4rem "Swanky and Moo Moo", sans-serif;
+    font: 300 1.2rem "Josefin Sans", sans-serif;
     text-align: center;
 }
 .card-text {
@@ -19,17 +19,32 @@ body {
     color: #FCFAFA;
     background-color: rgba(22, 42, 60, 0.321);
 }
+.jumbotron {
+    background-color: white;    
+}
  .jumbotron-fluid h1 {
-    font: 900 3rem "Swanky and Moo Moo", cursive;
+    font: 900 3rem "Cedarville Cursive", cursive;
     color: black;
+    text-shadow: 0 0 15px rgba(229, 250, 4);
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .jumbotron-fluid h2 {
-    font: .8rem;
-    color: rgba(0, 62, 80);
+    font: 500 1.6rem "Josefin Sans", sans-serif;
+    color: rgba(1, 44, 57);
+    text-align: center;
 }
+
 .navbar {
     font-family: "Swanky and Moo Moo", sans-serif;
-    background-color: rgba(171, 237, 248, 0.865);
+    font-size: 1.2rem;
+    background-color: rgb(1, 44, 57);
+}
+.nav-link {
+    font-family: "Cedarville Cursive", cursive;
+    color: rgb(94, 232, 247);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
 }
 footer {
     background-color: rgba(241, 241, 241);
@@ -41,4 +56,15 @@ footer {
     margin: 0px;
     padding: 30 px;
 }
-
+.form-control {
+    font: 200 .8rem "Nunito", sans-serif;
+}
+.form-group {
+    font: 400 1.2rem "Swanky and Moo Moo", cursive;
+}
+.breadcrumb {
+    background-color: rgb(130, 224, 255);
+}
+.breadcrumb-item {
+    font: 400 .8rem "Nunito", sans-serif;
+}

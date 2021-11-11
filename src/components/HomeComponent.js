@@ -4,7 +4,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reac
 function RenderCard({ item }) {
     return (
         <Card>
-            <CardImg src={item.alt} alt={item.name} />
+            <CardImg src={item.altImg} alt={item.name} />
             <CardBody>
                 <CardTitle>Bill Hayden</CardTitle>
                 <CardSubtitle>Owner &amp; Consultant</CardSubtitle>

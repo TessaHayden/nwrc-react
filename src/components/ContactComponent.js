@@ -65,7 +65,7 @@ class Contact extends Component {
                                 <Label htmlFor="firstName" md={2}>First Name</Label>
                                 <Col md={10}>
                                     <Control.text model=".firstName" id="firstName" name="firstName"
-                                        placeholder="firstName"
+                                        placeholder="First Name"
                                         className="form-control"
                                         validators={{
                                             required,
@@ -90,7 +90,7 @@ class Contact extends Component {
                                 <Label htmlFor="lastName" md={2}>Last Name</Label>
                                 <Col md={10}>
                                     <Control.text model=".lastName" id="lastName" name="lastName"
-                                        placeholder="lastName"
+                                        placeholder="Last Name"
                                         className="form-control"
                                     />
                                     <Errors
