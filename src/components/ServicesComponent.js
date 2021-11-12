@@ -2,14 +2,42 @@ import React from 'react';
 import { Card, CardText, CardBody, CardTitle, CardSubtitle, Breadcrumb, BreadcrumbItem, } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function Services({ item }) {
+function ClientList({ restaurantsfl }) {
     return (
         <Card>
             <CardBody>
-                <CardTitle>Restaurants by Name</CardTitle>
-                <CardSubtitle>Services rendered:</CardSubtitle>
-                {/* <CardText>{item.name}</CardText> */}
+                <CardTitle>Client List</CardTitle>
+                <CardSubtitle>Restaurants by name:</CardSubtitle>
+                <hr />
+                <CardText>
+                    <ul>
+                        {restaurantsfl.map((restaurant) => (
+                            <li key={restaurant.key}>
+                                {restaurant.name}
+                            </li>
+                        ))}
+                    </ul>
+                </CardText>
             </CardBody>
+        </Card>
+    );
+};
+function Services({ services }) {
+    return (
+        <Card>
+            <CardTitle>Services</CardTitle>
+            <CardSubtitle>Services provided:</CardSubtitle>
+            <hr />
+            <CardText>
+                <ul>
+                    {services.map((service) => (
+                        <li key={service.key}>
+                            {service.title}
+                            {services.description}
+                        </li>
+                    ))}
+                </ul>
+            </CardText>
         </Card>
     )
 }
@@ -26,8 +54,11 @@ function RenderServices(props) {
                 </div>
             </div>
             <div className="row">
-                <div className="col">
-                    <Services item={props.restaurant} />
+                <div className="col-md-6 m-2" >
+                    <ClientList restaurantsfl={props.restaurantsfl} />
+                </div>
+                <div className="col-md-6 m-2">
+                    <Services services={props.services} />
                 </div>
             </div>
         </div>

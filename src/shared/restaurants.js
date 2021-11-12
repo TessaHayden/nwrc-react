@@ -38,6 +38,6 @@ export const RESTAURANTS = [
         image: '../assets/images/southparkSz.jpeg',
         altImg: '../assets/images/southparkmedium.jpeg',
         description: 'High quality seafood grill in the heart of downtown Portland'
-    }
+    },
 
 ];

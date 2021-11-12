@@ -15,6 +15,8 @@ const mapStateToProps = state => {
     return {
         restaurants: state.restaurants,
         menus: state.menus,
+        services: state.services,
+        restaurantsfl: state.restaurantsfl
     }
 }
 
@@ -35,7 +37,9 @@ class Main extends Component {
         };
         const ServicesList = () => {
             return (
-                <RenderServices item={this.props.restaurants} />
+                <RenderServices
+                    restaurantsfl={this.props.restaurantsfl}
+                    services={this.props.services} />
             );
         };
 
