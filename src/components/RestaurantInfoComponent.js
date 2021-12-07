@@ -6,6 +6,7 @@ import {
   CardBody,
   Breadcrumb,
   BreadcrumbItem,
+  Button,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Fade } from "react-animation-components";
@@ -17,7 +18,7 @@ function RestaurantInfo(props) {
       <div className="container">
         <div className="row">
           <RenderRestaurant restaurant={props.restaurant} />
-          <RenderMenus menus={props.menus} />
+          <ImagesForRenderRestaurant menus={props.menus} />
         </div>
       </div>
     );
@@ -39,21 +40,65 @@ function RestaurantInfo(props) {
     );
   }
 
-  function RenderMenus({ menus }) {
+  function ImagesForRenderRestaurant({ menus }) {
     return (
       <div className="col-md-5 m-1">
-        <Carousel interval={3000} keyboard={false} pauseOnHover={true}>
-          <Carousel.Item style={{ maxHeight: "650px" }}>
-            <img
-              className="d-block w-100"
-              src="../assets/images/Haydenslitte.jpg"
-              alt="alternative solution"
-            />
-            <Carousel.Caption>
-              <h3>Menu Placeholder</h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+        <Fade in>
+          <Carousel interval={4000} keyboard={false} pauseOnHover={true}>
+            <Carousel.Item style={{ maxHeight: "650px" }}>
+              <img
+                className="d-block w-100"
+                src="../assets/images/brazilian-salmon-bowl.jpg"
+                alt="alternative solution"
+              />
+              <Carousel.Caption>
+                de Fuego
+                <a href="https://www.defuegogrille.com/" target="_blank">
+                  <Button>Go To</Button>
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item style={{ maxHeight: "650px" }}>
+              <img
+                className="d-block w-100"
+                src="https://d1ralsognjng37.cloudfront.net/a0331a66-c9e2-43de-8dba-3031c8967177.jpeg"
+                alt="alternative solution 2"
+              />
+              <Carousel.Caption>
+                Shigezo
+                <a href="https://www.shigezo-pdx.com/" target="_blank">
+                  <Button>Go To</Button>
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item style={{ maxHeight: "650px" }}>
+              <img
+                className="d-block w-100"
+                src="https://images.getbento.com/accounts/606a9c22cbdd0f334c02ed59dad16f93/media/images/21128DSC_1925.jpeg"
+                alt="alternative solution 3"
+              />
+              <Carousel.Caption>
+                Hayden's Lakefront Grill
+                <a href="https://www.haydensgrill.com/" target="_blank">
+                  <Button>Go To</Button>
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item style={{ maxHeight: "650px" }}>
+              <img
+                className="d-block w-100"
+                src="https://static.spotapps.co/spots/ca/18c87b77034dc8b9fbede276d499a7/medium"
+                alt="alternative solution 4"
+              />
+              <Carousel.Caption>
+                Southpark Seafood Grill
+                <a href="https://southparkseafood.com/" target="_blank">
+                  <Button>Go To</Button>
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </Fade>
       </div>
     );
   }
@@ -76,7 +121,7 @@ function RestaurantInfo(props) {
           <RenderRestaurant restaurant={props.restaurant} />
         </div>
         <div className="col-md-4">
-          <RenderMenus menus={props.menus} />
+          <ImagesForRenderRestaurant menus={props.menus} />
         </div>
       </div>
     </div>

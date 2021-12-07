@@ -38,9 +38,15 @@ function RenderCard({ item }) {
 }
 function RenderCenterScreen({ examples }) {
   return (
-    <Card>
-      <CardImg src={examples.altImg} alt={examples.name} />
-    </Card>
+    <Container>
+      <Row>
+        <Card>
+          <CardBody>
+            <CardTitle>Hello World!</CardTitle>
+          </CardBody>
+        </Card>
+      </Row>
+    </Container>
   );
 }
 
