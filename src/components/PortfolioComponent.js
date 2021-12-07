@@ -23,6 +23,7 @@ function Portfolio(props) {
             </div>
         );
     });
+    
     return (
         <div className="container">
             <div className="row">
