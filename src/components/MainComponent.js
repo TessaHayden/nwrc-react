@@ -42,7 +42,11 @@ class Main extends Component {
                 (restaurant) => restaurant.id === +match.params.restaurantId
               )[0]
             }
-            menus={this.props.menus}
+            menus={
+              this.props.menus.filter(
+                (menu) => menu.id === +match.params.restaurantId
+              )[0]
+            }
           />
         </div>
       );

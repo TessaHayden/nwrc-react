@@ -1,6 +1,24 @@
 body {
   font-family: "Swanky and Moo Moo", cursive;
 }
+.container-row .row .col {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  padding: 6rem;
+  text-align: center;
+  font-size: 1.75rem;
+  box-shadow: 10px 10px 5px 17px rgb(236, 233, 233);
+}
+.container-row .a-link {
+  font-size: 1.4rem;
+  padding-bottom: 3rem;
+}
+div .shadow-box-div {
+  padding: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 div .carousel .btn {
   background-color: rgba(216, 253, 253, 0.363);
   color: black;
@@ -13,23 +31,62 @@ div .carousel .btn {
   margin-left: auto;
   margin-right: auto;
 }
+.card-style {
+  background-color: rgb(95, 172, 202);
+  align-content: center;
+}
+
 .card-title {
   text-align: center;
-  font: 500 1.95rem "Cedarville Cursive", sans-serif;
+  font: 600 2.3rem "Cedarville Cursive", sans-serif;
 }
 .card-subtitle {
-  font: 300 1.2rem "Josefin Sans", sans-serif;
+  font: 300 1.4rem "Josefin Sans", sans-serif;
   text-align: center;
 }
 .card-text {
   text-align: center;
-  font: 400 1rem "roboto", sans-serif;
+  font: 300 1.2rem "roboto", sans-serif;
 }
 .card-img-overlay .card-title {
   font-family: "Federo", sans-serif;
   position: bottom;
   color: #fcfafa;
   background-color: rgba(22, 42, 60, 0.321);
+}
+.quote {
+  font-size: 6rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+div .home-top-div .card {
+  text-align: left;
+  background-color: rgb(85, 151, 238);
+  flex-direction: row;
+  width: 50%;
+}
+.home-top-div .card-text {
+  padding-top: 1.8rem;
+  text-align: left;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.home-bottom-page {
+  background-image: url(../src/images/vjelly.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  margin-bottom: 100px;
+}
+.vertical-align {
+  margin-top: 10rem;
+  padding: 12.9rem;
+  width: 100vh;
+}
+
+.special-text {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 .jumbotron {
   background-color: white;
@@ -72,6 +129,16 @@ footer {
   text-align: center;
 }
 a {
+  display: inline;
+}
+.break-space {
+  margin: 1.6rem;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+}
+.word-enlargement {
+  font: 400 2.7rem "Cedarville Cursive", sans-serif;
+  text-align: left;
   display: inline;
 }
 .jumbotron {
